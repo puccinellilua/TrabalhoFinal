@@ -1,0 +1,56 @@
+
+body {
+    padding-top: 56px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.animacao {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: exemplo-animation 2s infinite;
+}
+
+@keyframes exemplo-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+.transicao {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 0.5s;
+}
+
+.transicao:hover {
+    background-color: green;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+        
+    }
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+

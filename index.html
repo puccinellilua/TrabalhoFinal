@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo RG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="Logotipo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Pontos Turísticos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Entre em contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="container-fluid">
+            <h1>Bem-vindo ao Turismo RG!</h1>
+            <p>Somos uma empresa de turismo, e mostramos todas as belezas de Rio Grande, a cidade mais antiga do Rio Grande do Sul.</p>
+            <img src="../images/banner.jpg" alt="Banner" class="img-fluid">
+        </section>
+        <section id="galeria" class="container-fluid">
+            <h1>Pontos Turísticos</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/cassino.jpg" class="card-img-top" alt="Praia do Cassino">
+                        <div class="card-body">
+                            <h5 class="card-title">Praia do Cassino</h5>
+                            <p class="card-text"> Praia da cidade. </p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/taim.jpg" class="card-img-top" alt="Ponto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Reserva Ecológica do Taim</h5>
+                            <p class="card-text">Reserva Ecológica.</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/museu.jpg" class="card-img-top" alt="Ponto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Museu Oceanográfico Eliézer de C. Rios</h5>
+                            <p class="card-text">Museu Oceanográfico.</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/navio.jpg" class="card-img-top" alt="Ponto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Naufrágio do navio Altair</h5>
+                            <p class="card-text">Navio Altair.</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="container-fluid">
+            <main>
+                <section class="container mt-5 pt-5">
+                    <h1>Formulário de Contato</h1>
+                    <form action="#" method="post">
+                        <fieldset class="border p-4">
+                            <legend class="w-auto">Informações Pessoais</legend>
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nome">Sobrenome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone 1:</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone 2:</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="data">Data de Nascimento:</label>
+                                <input type="date" class="form-control" id="data" name="data">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </section>
+    </main>
+    <footer>
+        <p>Contato: turismorg@contato.ifrs.edu.br | Telefone: (53) 1234-5678</p>
+        <p>Endereço: Rua das Missões, 235, Rio Grande, RS</p>
+        <div>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Praia do Cassino</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/cassino.jpg" class="img-fluid" alt="Praia do Cassino">
+                    <p>Praia do Cassino é uma praia localizada no município de Rio Grande, no estado do Rio Grande do Sul, Brasil. Seu início fica a 22 quilômetros do centro da cidade do Rio Grande, nos Molhes da Barra, onde a Lagoa dos Patos encontra o mar. É famosa por seu tamanho, já tendo sido considerada a maior praia do mundo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Reserva Ecológica do Taim</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/taim.jpg" class="img-fluid" alt="Reserva Ecológica do Taim">
+                    <p>Taim é uma propriedade pública que foi declarada uma área de interesse ecológico, com um vasto sistema lagunar parcialmente formado pelas lagoas Mirim, Jacaré, Nicola e Mangueira.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Museu Oceanográfico Eliézer de C. Rios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/museu.jpg" class="img-fluid" alt="Museu Oceanográfico Eliézer de C. Rios">
+                    <p>Complexo de pesquisas da vida marinha e museu com área ao ar livre, mostras permanentes e agenda educacional.                        .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal4Label">Naufrágio do navio Altair</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/navio.jpg" class="img-fluid" alt="Naufrágio do navio Altair">
+                    <p>Navio cargueiro Altair que não resistiu a uma intensa tempestade e submergiu na praia do Cassino em 1976.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
